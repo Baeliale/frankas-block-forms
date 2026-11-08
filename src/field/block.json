@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "frankas-block-forms/field",
+	"version": "1.0.0",
+	"title": "Form Field",
+	"category": "frankas-block-forms",
+	"description": "One form field. Pick the type in the sidebar: text, email, phone, number, date, long text, dropdown, choice buttons or checkbox.",
+	"keywords": [ "input", "form" ],
+	"ancestor": [ "frankas-block-forms/form" ],
+	"icon": "edit-large",
+	"supports": { "html": false, "reusable": false },
+	"attributes": {
+		"type": { "type": "string", "enum": [ "text", "email", "tel", "number", "date", "textarea", "select", "radio", "checkbox" ], "default": "text" },
+		"label": { "type": "string", "default": "" },
+		"name": { "type": "string", "default": "" },
+		"placeholder": { "type": "string", "default": "" },
+		"options": { "type": "string", "default": "" },
+		"required": { "type": "boolean", "default": false }
+	},
+	"textdomain": "frankas-block-forms",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

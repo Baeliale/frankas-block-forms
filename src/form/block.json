@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "frankas-block-forms/form",
+	"version": "1.0.0",
+	"title": "Form",
+	"category": "frankas-block-forms",
+	"description": "Shows one of your forms. Its fields can be edited right here; changes apply everywhere the form is used.",
+	"keywords": [ "contact", "form", "signup" ],
+	"icon": "feedback",
+	"supports": { "html": false, "align": [ "wide", "full" ], "spacing": { "margin": true, "padding": true } },
+	"attributes": {
+		"formId": { "type": "number", "default": 0 }
+	},
+	"textdomain": "frankas-block-forms",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,561 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: frankas-block-forms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: frankas-block-forms\n"
+
+#: includes/admin-submissions.php:18 includes/admin-submissions.php:19 includes/admin-submissions.php:184 includes/admin.php:77 includes/admin.php:149 src/shared/form-settings.js:92
+msgid "Submissions"
+msgstr "Inzendingen"
+
+#: includes/admin-submissions.php:186
+msgid "Export as CSV"
+msgstr "Exporteren als CSV"
+
+#: includes/admin-submissions.php:201
+msgid "There are no forms yet."
+msgstr "Er zijn nog geen formulieren."
+
+#: includes/admin-submissions.php:208 includes/post-type.php:19 frankas-block-forms.php:90 src/form/index.js:90 src/form/index.js:218 src/shared/templates.js:50
+msgid "Form"
+msgstr "Formulier"
+
+#: includes/admin-submissions.php:211 src/form/index.js:204
+msgid "(no name)"
+msgstr "(geen naam)"
+
+#: includes/admin-submissions.php:214
+msgid "Show"
+msgstr "Tonen"
+
+#: includes/admin-submissions.php:215 includes/post-type.php:23
+msgid "Edit form"
+msgstr "Formulier bewerken"
+
+#: includes/admin-submissions.php:219
+msgid "This form does not save submissions; they are only e-mailed. Turn on “Save submissions” in the form settings to keep them here."
+msgstr "Dit formulier bewaart geen inzendingen; ze worden alleen gemaild. Zet “Inzendingen bewaren” aan in de formulierinstellingen om ze hier te bewaren."
+
+#: includes/admin-submissions.php:244
+msgid "This submission no longer exists."
+msgstr "Deze inzending bestaat niet meer."
+
+#: includes/admin-submissions.php:245 includes/admin-submissions.php:249
+msgid "← All submissions"
+msgstr "← Alle inzendingen"
+
+#: includes/admin-submissions.php:268
+msgid "Delete submission"
+msgstr "Inzending verwijderen"
+
+#: includes/admin-submissions.php:41 includes/admin-submissions.php:152
+msgid "Received"
+msgstr "Ontvangen"
+
+#: includes/admin-submissions.php:45 includes/admin-submissions.php:152 includes/admin-submissions.php:261
+msgid "Sent from"
+msgstr "Verstuurd vanaf"
+
+#: includes/admin-submissions.php:50 includes/admin-submissions.php:78
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: includes/admin-submissions.php:66
+msgid "No submissions yet."
+msgstr "Nog geen inzendingen."
+
+#: includes/admin-submissions.php:77
+msgid "View"
+msgstr "Bekijken"
+
+#: includes/admin.php:106
+msgid "(no title)"
+msgstr "(geen titel)"
+
+#: includes/admin.php:145
+msgid "New form from this template"
+msgstr "Nieuw formulier op basis van dit sjabloon"
+
+#: includes/admin.php:147
+msgid "Duplicate"
+msgstr "Dupliceren"
+
+#: includes/admin.php:148 src/form/index.js:177
+msgid "Save as template"
+msgstr "Opslaan als sjabloon"
+
+#: includes/admin.php:163
+msgid "You are not allowed to copy this form."
+msgstr "Je mag dit formulier niet kopiëren."
+
+#: includes/admin.php:186 src/editor/index.js:80
+msgid "Template"
+msgstr "Sjabloon"
+
+#: includes/admin.php:61 includes/post-type.php:18 includes/post-type.php:20
+msgid "Forms"
+msgstr "Formulieren"
+
+#: includes/admin.php:63
+msgid "Templates <span class=\"count\">(%d)</span>"
+msgstr "Sjablonen <span class=\"count\">(%d)</span>"
+
+#: includes/admin.php:78
+msgid "Used on"
+msgstr "Gebruikt op"
+
+#: includes/admin.php:97
+msgid "Not saved"
+msgstr "Niet bewaard"
+
+#: includes/post-type.php:21 includes/post-type.php:22
+msgid "Add form"
+msgstr "Formulier toevoegen"
+
+#: includes/post-type.php:24 src/form/index.js:79 src/form/index.js:110
+msgid "New form"
+msgstr "Nieuw formulier"
+
+#: includes/post-type.php:25
+msgid "Search forms"
+msgstr "Formulieren zoeken"
+
+#: includes/post-type.php:26
+msgid "No forms found."
+msgstr "Geen formulieren gevonden."
+
+#: includes/post-type.php:27
+msgid "No forms found in the bin."
+msgstr "Geen formulieren gevonden in de prullenbak."
+
+#: includes/post-type.php:28
+msgid "All forms"
+msgstr "Alle formulieren"
+
+#: includes/post-type.php:29
+msgid "Form saved."
+msgstr "Formulier opgeslagen."
+
+#: includes/post-type.php:30
+msgid "Form updated."
+msgstr "Formulier bijgewerkt."
+
+#: includes/post-type.php:70 src/field/index.js:65 src/shared/templates.js:15
+msgid "Name"
+msgstr "Naam"
+
+#: includes/post-type.php:71 src/shared/templates.js:16
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: includes/post-type.php:72 src/shared/form-settings.js:147 src/shared/templates.js:17
+msgid "Message"
+msgstr "Bericht"
+
+#: includes/post-type.php:88
+msgid "Form not found."
+msgstr "Formulier niet gevonden."
+
+#: includes/post-type.php:96 src/shared/templates.js:50
+msgid "%s (template)"
+msgstr "%s (sjabloon)"
+
+#: includes/post-type.php:96
+msgid "%s (copy)"
+msgstr "%s (kopie)"
+
+#: includes/settings.php:19
+msgid "Send"
+msgstr "Versturen"
+
+#: includes/settings.php:20
+msgid "Thank you, your message has been sent."
+msgstr "Bedankt, je bericht is verstuurd."
+
+#: includes/settings.php:29
+msgid "New submission: {form_title}"
+msgstr "Nieuwe inzending: {form_title}"
+
+#: includes/settings.php:35
+msgid "We have received your message"
+msgstr "We hebben je bericht ontvangen"
+
+#: includes/settings.php:36
+msgid "Thank you for your message. We will get back to you as soon as possible."
+msgstr "Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op."
+
+#: includes/settings.php:37
+msgid "Your answers:"
+msgstr "Je antwoorden:"
+
+#: includes/submit.php:115
+msgid "This field is required."
+msgstr "Dit veld is verplicht."
+
+#: includes/submit.php:120
+msgid "Enter a valid email address."
+msgstr "Vul een geldig e-mailadres in."
+
+#: includes/submit.php:122
+msgid "Enter a number."
+msgstr "Vul een getal in."
+
+#: includes/submit.php:125
+msgid "Enter a valid date."
+msgstr "Vul een geldige datum in."
+
+#: includes/submit.php:128
+msgid "Choose one of the options."
+msgstr "Kies een van de opties."
+
+#: includes/submit.php:147
+msgid "Sent from: %s"
+msgstr "Verstuurd vanaf: %s"
+
+#: includes/submit.php:43
+msgid "Your message could not be sent. Please try again later."
+msgstr "Je bericht kon niet worden verstuurd. Probeer het later nog eens."
+
+#: includes/submit.php:76
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/submit.php:76
+msgid "No"
+msgstr "Nee"
+
+#: includes/submit.php:81
+msgid "Please check the fields marked below."
+msgstr "Controleer de gemarkeerde velden hieronder."
+
+#: src/editor/index.js:103
+msgid "All templates"
+msgstr "Alle sjablonen"
+
+#: src/editor/index.js:77 src/form/index.js:162 src/form/index.js:212 src/form/index.js:225
+msgid "Form settings"
+msgstr "Formulierinstellingen"
+
+#: src/editor/index.js:82
+msgid "This form is a template"
+msgstr "Dit formulier is een sjabloon"
+
+#: src/editor/index.js:83
+msgid "Templates are starting points for new forms. They can’t be placed on pages."
+msgstr "Sjablonen zijn een startpunt voor nieuwe formulieren. Ze kunnen niet op pagina’s worden geplaatst."
+
+#: src/editor/index.js:99
+msgid "Save a copy as template"
+msgstr "Kopie opslaan als sjabloon"
+
+#: src/field/block.json
+msgctxt "block title"
+msgid "Form Field"
+msgstr "Formulierveld"
+
+#: src/field/block.json
+msgctxt "block description"
+msgid "One form field. Pick the type in the sidebar: text, email, phone, number, date, long text, dropdown, choice buttons or checkbox."
+msgstr "Eén formulierveld. Kies het soort in de zijbalk: tekst, e-mail, telefoon, getal, datum, lange tekst, keuzelijst, keuzerondjes of vinkje."
+
+#: src/field/block.json
+msgctxt "block keyword"
+msgid "input"
+msgstr "invoer"
+
+#: src/field/block.json src/form/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulier"
+
+#: src/field/index.js:104
+msgid "Label"
+msgstr "Label"
+
+#: src/field/index.js:112
+msgid "Field"
+msgstr "Veld"
+
+#: src/field/index.js:114
+msgid "Field type"
+msgstr "Soort veld"
+
+#: src/field/index.js:12
+msgid "Text"
+msgstr "Tekst"
+
+#: src/field/index.js:122
+msgid "Options"
+msgstr "Opties"
+
+#: src/field/index.js:123
+msgid "One option per line."
+msgstr "Eén optie per regel."
+
+#: src/field/index.js:13
+msgid "Email"
+msgstr "E-mail"
+
+#: src/field/index.js:132
+msgid "Placeholder"
+msgstr "Voorbeeldtekst"
+
+#: src/field/index.js:133
+msgid "Grey example text shown inside the empty field."
+msgstr "Grijze voorbeeldtekst in het lege veld."
+
+#: src/field/index.js:14
+msgid "Phone number"
+msgstr "Telefoonnummer"
+
+#: src/field/index.js:140
+msgid "Required"
+msgstr "Verplicht"
+
+#: src/field/index.js:149
+msgid "Field name"
+msgstr "Veldnaam"
+
+#: src/field/index.js:15
+msgid "Number"
+msgstr "Getal"
+
+#: src/field/index.js:152
+msgid "Used in submissions and as {%s} in e-mails. Leave empty to make it from the label."
+msgstr "Gebruikt in inzendingen en als {%s} in e-mails. Laat leeg om hem uit het label te maken."
+
+#: src/field/index.js:16
+msgid "Date"
+msgstr "Datum"
+
+#: src/field/index.js:166
+msgid "Another field is also called \"%s\". Give one of them a different label or field name, or its answer will be lost."
+msgstr "Een ander veld heet ook \"%s\". Geef een van beide een ander label of een andere veldnaam, anders gaat het antwoord verloren."
+
+#: src/field/index.js:17
+msgid "Long text"
+msgstr "Lange tekst"
+
+#: src/field/index.js:18
+msgid "Dropdown"
+msgstr "Keuzelijst"
+
+#: src/field/index.js:19
+msgid "Choice buttons (pick one)"
+msgstr "Keuzerondjes (kies er één)"
+
+#: src/field/index.js:20
+msgid "Checkbox (yes/no)"
+msgstr "Vinkje (ja/nee)"
+
+#: src/field/index.js:53
+msgid "Add options in the sidebar"
+msgstr "Voeg opties toe in de zijbalk"
+
+#: src/field/index.js:65
+msgid "Form Field"
+msgstr "Formulierveld"
+
+#: src/field/render.php:64 src/field/index.js:46
+msgid "Choose…"
+msgstr "Kies…"
+
+#: src/form/block.json
+msgctxt "block title"
+msgid "Form"
+msgstr "Formulier"
+
+#: src/form/block.json
+msgctxt "block description"
+msgid "Shows one of your forms. Its fields can be edited right here; changes apply everywhere the form is used."
+msgstr "Toont een van je formulieren. De velden zijn hier direct te bewerken; wijzigingen gelden overal waar het formulier staat."
+
+#: src/form/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr "contact"
+
+#: src/form/block.json
+msgctxt "block keyword"
+msgid "signup"
+msgstr "aanmelden"
+
+#: src/form/index.js:100
+msgid "Choose a form…"
+msgstr "Kies een formulier…"
+
+#: src/form/index.js:105
+msgid "Use this form"
+msgstr "Dit formulier gebruiken"
+
+#: src/form/index.js:110
+msgid "Name, e.g. Contact"
+msgstr "Naam, bijv. Contact"
+
+#: src/form/index.js:113
+msgid "Start from"
+msgstr "Beginnen met"
+
+#: src/form/index.js:115
+msgid "Name, email and message"
+msgstr "Naam, e-mail en bericht"
+
+#: src/form/index.js:121
+msgid "Create form"
+msgstr "Formulier maken"
+
+#: src/form/index.js:163
+msgid "Name of the form"
+msgstr "Naam van het formulier"
+
+#: src/form/index.js:163
+msgid "Only shown in WordPress, not to visitors."
+msgstr "Alleen zichtbaar in WordPress, niet voor bezoekers."
+
+#: src/form/index.js:165
+msgid "These settings belong to the form and are saved with it when you save the page."
+msgstr "Deze instellingen horen bij het formulier en worden ermee opgeslagen als je de pagina opslaat."
+
+#: src/form/index.js:180
+msgid "Done"
+msgstr "Klaar"
+
+#: src/form/index.js:198
+msgid "Choose another form"
+msgstr "Ander formulier kiezen"
+
+#: src/form/index.js:199
+msgid "This form no longer exists."
+msgstr "Dit formulier bestaat niet meer."
+
+#: src/form/index.js:214
+msgid "Replace"
+msgstr "Vervangen"
+
+#: src/form/index.js:222
+msgid "Changes to the fields and settings apply everywhere this form is used."
+msgstr "Wijzigingen in de velden en instellingen gelden overal waar dit formulier staat."
+
+#: src/form/index.js:227
+msgid "Open in the form editor"
+msgstr "Openen in de formuliereditor"
+
+#: src/form/index.js:228 src/shared/form-settings.js:101
+msgid "View submissions"
+msgstr "Inzendingen bekijken"
+
+#: src/form/index.js:234
+msgid "This is a template. Templates are not shown on the site; choose a form instead."
+msgstr "Dit is een sjabloon. Sjablonen worden niet op de site getoond; kies een formulier."
+
+#: src/form/index.js:73
+msgid "Form %d"
+msgstr "Formulier %d"
+
+#: src/form/index.js:90
+msgid "Choose one of your forms, or make a new one."
+msgstr "Kies een van je formulieren, of maak een nieuw formulier."
+
+#: src/form/index.js:98
+msgid "Existing form"
+msgstr "Bestaand formulier"
+
+#: src/form/render.php:67
+msgid "Leave this field empty"
+msgstr "Laat dit veld leeg"
+
+#: src/shared/form-settings.js:105
+msgid "E-mail to you"
+msgstr "E-mail naar jou"
+
+#: src/shared/form-settings.js:106
+msgid "Send an e-mail for every submission"
+msgstr "Stuur een e-mail bij elke inzending"
+
+#: src/shared/form-settings.js:110
+msgid "Send to"
+msgstr "Versturen naar"
+
+#: src/shared/form-settings.js:113
+msgid "Separate several addresses with commas. Empty: %s (the site’s admin address)."
+msgstr "Scheid meerdere adressen met komma’s. Leeg: %s (het beheeradres van de site)."
+
+#: src/shared/form-settings.js:121 src/shared/form-settings.js:146
+msgid "Subject"
+msgstr "Onderwerp"
+
+#: src/shared/form-settings.js:123
+msgid "Reply to the address in"
+msgstr "Antwoorden naar het adres in"
+
+#: src/shared/form-settings.js:124
+msgid "So that clicking Reply in your e-mail program answers the person who filled in the form."
+msgstr "Zodat Beantwoorden in je e-mailprogramma een antwoord stuurt aan wie het formulier invulde."
+
+#: src/shared/form-settings.js:134
+msgid "Confirmation e-mail"
+msgstr "Bevestigingsmail"
+
+#: src/shared/form-settings.js:135
+msgid "Send a confirmation to the person who filled in the form"
+msgstr "Stuur een bevestiging naar wie het formulier invulde"
+
+#: src/shared/form-settings.js:139
+msgid "Send to the address in"
+msgstr "Versturen naar het adres in"
+
+#: src/shared/form-settings.js:140
+msgid "Add a field of the type Email to the form first."
+msgstr "Voeg eerst een veld van het soort E-mail toe aan het formulier."
+
+#: src/shared/form-settings.js:67
+msgid "— None —"
+msgstr "— Geen —"
+
+#: src/shared/form-settings.js:70
+msgid "Use {field_name} for an answer, {all_fields} for all answers and {form_title} for the name of the form."
+msgstr "Gebruik {veldnaam} voor een antwoord (bijv. {email}), {all_fields} voor alle antwoorden en {form_title} voor de naam van het formulier."
+
+#: src/shared/form-settings.js:76
+msgid "Submissions are neither saved nor e-mailed, so nobody will see them."
+msgstr "Inzendingen worden niet bewaard en niet gemaild, dus niemand krijgt ze te zien."
+
+#: src/shared/form-settings.js:80
+msgid "Button and thank-you message"
+msgstr "Knop en bedankbericht"
+
+#: src/shared/form-settings.js:81
+msgid "Button text"
+msgstr "Tekst op de knop"
+
+#: src/shared/form-settings.js:82
+msgid "Thank-you message"
+msgstr "Bedankbericht"
+
+#: src/shared/form-settings.js:84
+msgid "Or go to this page"
+msgstr "Of ga naar deze pagina"
+
+#: src/shared/form-settings.js:85
+msgid "An address such as /thank-you. Leave empty to show the thank-you message instead."
+msgstr "Een adres zoals /bedankt. Laat leeg om in plaats daarvan het bedankbericht te tonen."
+
+#: src/shared/form-settings.js:94
+msgid "Save submissions"
+msgstr "Inzendingen bewaren"
+
+#: src/shared/form-settings.js:95
+msgid "Keep every submission in WordPress, under Forms › Submissions. Turn off if the e-mail is enough."
+msgstr "Bewaar elke inzending in WordPress, onder Formulieren › Inzendingen. Zet uit als de e-mail genoeg is."
+
+#: src/shared/templates.js:43
+msgid "The form could not be created."
+msgstr "Het formulier kon niet worden gemaakt."
+
+#: src/shared/templates.js:56
+msgid "Saved as a template. You can start new forms from it."
+msgstr "Opgeslagen als sjabloon. Je kunt er nieuwe formulieren mee beginnen."

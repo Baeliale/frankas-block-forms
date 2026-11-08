@@ -1,0 +1,136 @@
+// Neutral base look. Themes restyle forms through these custom properties
+// (set them on :root or on .fbf-form) or by targeting the fbf-* classes.
+
+.fbf-field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0 0 var(--fbf-field-gap, 20px);
+}
+
+fieldset.fbf-field {
+	min-width: 0;
+	padding: 0;
+	border: 0;
+
+	.fbf-option {
+		margin-top: 8px;
+	}
+}
+
+.fbf-label {
+	padding: 0;
+	font-size: var(--fbf-label-size, 0.875rem);
+	font-weight: 600;
+	color: var(--fbf-text, inherit);
+}
+
+.fbf-required {
+	margin-left: 2px;
+	color: var(--fbf-error, #c62828);
+}
+
+.fbf-input,
+.fbf-textarea,
+.fbf-select {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 12px 16px;
+	border: 1px solid var(--fbf-border, #c9ccd1);
+	border-radius: var(--fbf-radius, 6px);
+	background-color: var(--fbf-background, #fff);
+	color: var(--fbf-text, inherit);
+	font: inherit;
+	font-size: var(--fbf-input-size, 1rem);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+	&:hover {
+		border-color: var(--fbf-border-hover, #8c9096);
+	}
+
+	&:focus {
+		outline: none;
+		border-color: var(--fbf-accent, #2271b1);
+		box-shadow: 0 0 0 3px var(--fbf-focus-ring, rgba(34, 113, 177, 0.2));
+	}
+
+	&:disabled {
+		opacity: 0.7;
+		cursor: not-allowed;
+	}
+}
+
+// In the editor the fields are disabled previews; show them as visitors
+// see them rather than greyed out (WordPress admin styles grey them).
+.editor-styles-wrapper .fbf-field {
+	.fbf-input,
+	.fbf-textarea,
+	.fbf-select,
+	.fbf-option input {
+		background-color: var(--fbf-background, #fff);
+		border-color: var(--fbf-border, #c9ccd1);
+		color: var(--fbf-text, inherit);
+		opacity: 1;
+		cursor: default;
+		box-shadow: none;
+	}
+}
+
+// Submit button preview in the form editor (src/editor), lined up with the fields.
+.editor-styles-wrapper .fbf-editor-submit {
+	box-sizing: border-box;
+	max-width: var(--wp--style--global--content-size, 840px);
+	margin: 0 auto 80px;
+}
+
+.editor-styles-wrapper .fbf-submit:disabled {
+	opacity: 1;
+	cursor: default;
+}
+
+.fbf-textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.fbf-select {
+	appearance: none;
+	padding-right: 40px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23777' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+}
+
+.fbf-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	color: var(--fbf-text, inherit);
+	font-size: var(--fbf-input-size, 1rem);
+	cursor: pointer;
+
+	input {
+		flex-shrink: 0;
+		width: 18px;
+		height: 18px;
+		margin: 2px 0 0;
+		accent-color: var(--fbf-accent, #2271b1);
+	}
+}
+
+.fbf-field.has-error {
+	.fbf-input,
+	.fbf-textarea,
+	.fbf-select {
+		border-color: var(--fbf-error, #c62828);
+	}
+}
+
+.fbf-error {
+	font-size: 0.875rem;
+	color: var(--fbf-error, #c62828);
+
+	&[hidden] {
+		display: none;
+	}
+}

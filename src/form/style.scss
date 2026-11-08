@@ -1,0 +1,59 @@
+// Neutral base look; see src/field/style.scss for the custom properties.
+
+.fbf-form__actions {
+	margin-top: 4px;
+}
+
+.fbf-submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--fbf-button-width, auto);
+	padding: 12px 24px;
+	border: 0;
+	border-radius: var(--fbf-radius, 6px);
+	background: var(--fbf-accent, #2271b1);
+	color: var(--fbf-button-text, #fff);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--fbf-accent-hover, #135e96);
+	}
+
+	&:disabled,
+	&[aria-busy="true"] {
+		opacity: 0.6;
+		cursor: wait;
+	}
+}
+
+.fbf-message {
+	margin: 0 0 var(--fbf-field-gap, 20px);
+	padding: 14px 18px;
+	border-radius: var(--fbf-radius, 6px);
+
+	&[hidden] {
+		display: none;
+	}
+
+	&--success {
+		background: var(--fbf-success-background, #edf7ed);
+		color: var(--fbf-success, #1e4620);
+	}
+
+	&--error {
+		background: var(--fbf-error-background, #fdeded);
+		color: var(--fbf-error, #c62828);
+	}
+}
+
+// Spam trap: hidden from people, filled in by bots.
+.fbf-hp {
+	position: absolute !important;
+	left: -9999px !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
