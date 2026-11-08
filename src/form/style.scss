@@ -1,15 +1,16 @@
 // Neutral base look; see src/field/style.scss for the custom properties.
 
 .fbf-form__actions {
-	margin-top: 4px;
+	margin-block-start: 0.25rem;
 }
 
 .fbf-submit {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: var(--fbf-button-width, auto);
-	padding: 12px 24px;
+	inline-size: var(--fbf-button-width, auto);
+	padding-block: 0.75rem;
+	padding-inline: 1.5rem;
 	border: 0;
 	border-radius: var(--fbf-radius, 6px);
 	background: var(--fbf-accent, #2271b1);
@@ -30,8 +31,10 @@
 }
 
 .fbf-message {
-	margin: 0 0 var(--fbf-field-gap, 20px);
-	padding: 14px 18px;
+	margin-block: 0 var(--fbf-field-gap, 1.25rem);
+	margin-inline: 0;
+	padding-block: 0.875rem;
+	padding-inline: 1.125rem;
 	border-radius: var(--fbf-radius, 6px);
 
 	&[hidden] {
@@ -52,8 +55,15 @@
 // Spam trap: hidden from people, filled in by bots.
 .fbf-hp {
 	position: absolute !important;
-	left: -9999px !important;
-	width: 1px;
-	height: 1px;
+	inset-inline-start: -624.9375rem !important;
+	inline-size: 0.0625rem;
+	block-size: 0.0625rem;
 	overflow: hidden;
+}
+
+// Keyboard focus on the button and on checkboxes/radio buttons.
+.fbf-submit:focus-visible,
+.fbf-option input:focus-visible {
+	outline: 2px solid var(--fbf-accent, #2271b1);
+	outline-offset: 2px;
 }

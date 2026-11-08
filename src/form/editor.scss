@@ -2,15 +2,15 @@
 
 .fbf-picker {
 	display: grid;
-	gap: 16px;
-	width: 100%;
+	gap: 1rem;
+	inline-size: 100%;
 }
 
 .fbf-picker__row {
 	flex-wrap: wrap;
 
 	> * {
-		flex: 1 1 180px;
+		flex: 1 1 11.25rem;
 	}
 
 	> .components-button {
@@ -21,5 +21,5 @@
 // Room for the editor's selection outline, which otherwise covers the first
 // letter of each label when the fields sit flush against the block edge.
 .fbf-form-block > .fbf-form {
-	padding: 6px;
+	padding: 0.375rem;
 }

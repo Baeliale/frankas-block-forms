@@ -11,10 +11,13 @@ Forms for WordPress, built from blocks. A form is a post with Form Field blocks 
   - a confirmation e-mail to the person who filled in the form.
 - **Submissions** are listed under *Forms › Submissions*, per form.
 - **Templates:** save a form as a template and start new forms from it.
-- **Accessible:**
+- **Accessible (WCAG 2.2 AA):**
   - native browser validation;
   - server-side errors linked to their fields;
-  - focus moves to the first error.
+  - focus moves to the first error;
+  - a clearly visible focus ring;
+  - 24px checkboxes and radio buttons;
+  - sizes in rem, so forms follow the visitor's text size.
 
   Forms also work without JavaScript.
 - **Spam protection without outside services:** a hidden field and a minimum fill-in time. There's no nonce, so forms keep working on cached pages.
@@ -62,7 +65,7 @@ E-mails are sent with `wp_mail()`. On many hosts you'll need an SMTP plugin for 
 
 ## Styling
 
-The forms have a neutral look. To match your theme, set these custom properties on `:root` or `.fbf-form`:
+The forms have a neutral look. To match your theme, set these custom properties on `:root` or `.fbf-form`. Use rem rather than px, so the form keeps growing with the visitor's text size:
 
 ```css
 :root {
@@ -78,9 +81,9 @@ The forms have a neutral look. To match your theme, set these custom properties 
 	--fbf-success: #16434a;
 	--fbf-success-background: #e3f4f5;
 	--fbf-radius: 8px;
-	--fbf-label-size: 15px;
-	--fbf-input-size: 16px;       /* 16px stops iOS zooming in on focus */
-	--fbf-field-gap: 20px;
+	--fbf-label-size: 0.9375rem;
+	--fbf-input-size: 1rem;       /* 1rem (16px) stops iOS zooming in on focus */
+	--fbf-field-gap: 1.25rem;
 	--fbf-button-text: #fff;
 	--fbf-button-width: auto;     /* or 100% */
 }
@@ -114,6 +117,7 @@ add_action( 'frankas_block_forms_submitted', function ( int $form_id, array $dat
 npm start          # rebuild on every change
 npm run build      # production build
 npm run lint:js
+npm run lint:css     # rem instead of px, logical properties, unitless line heights
 npm run i18n       # update the .pot, merge into .po files, compile .mo/.json
 ```
 

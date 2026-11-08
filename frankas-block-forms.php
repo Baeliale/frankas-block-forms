@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Frankas Block Forms
  * Description: Forms built from blocks. Each form is a post with its own settings for e-mails, saved submissions and what happens after sending; place it on any page with the Form block.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: Franka Beekman
@@ -16,7 +16,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FRANKAS_BLOCK_FORMS_VERSION', '1.0.0' );
+define( 'FRANKAS_BLOCK_FORMS_VERSION', '1.1.0' );
 define( 'FRANKAS_BLOCK_FORMS_FILE', __FILE__ );
 define( 'FRANKAS_BLOCK_FORMS_DIR', plugin_dir_path( __FILE__ ) );
 

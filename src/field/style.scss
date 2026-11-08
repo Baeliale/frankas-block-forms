@@ -4,17 +4,18 @@
 .fbf-field {
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
-	margin: 0 0 var(--fbf-field-gap, 20px);
+	gap: 0.375rem;
+	margin-block: 0 var(--fbf-field-gap, 1.25rem);
+	margin-inline: 0;
 }
 
 fieldset.fbf-field {
-	min-width: 0;
+	min-inline-size: 0;
 	padding: 0;
 	border: 0;
 
 	.fbf-option {
-		margin-top: 8px;
+		margin-block-start: 0.5rem;
 	}
 }
 
@@ -26,7 +27,7 @@ fieldset.fbf-field {
 }
 
 .fbf-required {
-	margin-left: 2px;
+	margin-inline-start: 0.125rem;
 	color: var(--fbf-error, #c62828);
 }
 
@@ -34,8 +35,9 @@ fieldset.fbf-field {
 .fbf-textarea,
 .fbf-select {
 	box-sizing: border-box;
-	width: 100%;
-	padding: 12px 16px;
+	inline-size: 100%;
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
 	border: 1px solid var(--fbf-border, #c9ccd1);
 	border-radius: var(--fbf-radius, 6px);
 	background-color: var(--fbf-background, #fff);
@@ -48,10 +50,13 @@ fieldset.fbf-field {
 		border-color: var(--fbf-border-hover, #8c9096);
 	}
 
+	// A solid outline in the accent colour, so focus stands out at 3:1 or
+	// more whatever the focus-ring colour is (WCAG 2.4.7, 1.4.11).
 	&:focus {
-		outline: none;
+		outline: 2px solid var(--fbf-accent, #2271b1);
+		outline-offset: 1px;
 		border-color: var(--fbf-accent, #2271b1);
-		box-shadow: 0 0 0 3px var(--fbf-focus-ring, rgba(34, 113, 177, 0.2));
+		box-shadow: 0 0 0 4px var(--fbf-focus-ring, rgba(34, 113, 177, 0.2));
 	}
 
 	&:disabled {
@@ -79,8 +84,9 @@ fieldset.fbf-field {
 // Submit button preview in the form editor (src/editor), lined up with the fields.
 .editor-styles-wrapper .fbf-editor-submit {
 	box-sizing: border-box;
-	max-width: var(--wp--style--global--content-size, 840px);
-	margin: 0 auto 80px;
+	max-inline-size: var(--wp--style--global--content-size, 52.5rem);
+	margin-block: 0 5rem;
+	margin-inline: auto;
 }
 
 .editor-styles-wrapper .fbf-submit:disabled {
@@ -89,31 +95,33 @@ fieldset.fbf-field {
 }
 
 .fbf-textarea {
-	min-height: 120px;
+	min-block-size: 7.5rem;
 	resize: vertical;
 }
 
 .fbf-select {
 	appearance: none;
-	padding-right: 40px;
+	padding-inline-end: 2.5rem;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%23777' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
-	background-position: right 16px center;
+	background-position: right 1rem center;
 }
 
 .fbf-option {
 	display: flex;
 	align-items: flex-start;
-	gap: 10px;
+	gap: 0.625rem;
 	color: var(--fbf-text, inherit);
 	font-size: var(--fbf-input-size, 1rem);
 	cursor: pointer;
 
 	input {
 		flex-shrink: 0;
-		width: 18px;
-		height: 18px;
-		margin: 2px 0 0;
+		// 24px: the minimum target size (WCAG 2.5.8).
+		inline-size: 1.5rem;
+		block-size: 1.5rem;
+		margin-block: 0;
+		margin-inline: 0;
 		accent-color: var(--fbf-accent, #2271b1);
 	}
 }

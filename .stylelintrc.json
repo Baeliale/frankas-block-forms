@@ -1,0 +1,20 @@
+{
+	"customSyntax": "postcss-scss",
+	"plugins": [ "stylelint-use-logical" ],
+	"rules": {
+		"csstools/use-logical": "always",
+		"unit-disallowed-list": [
+			[ "px" ],
+			{
+				"ignoreProperties": {
+					"px": [ "/^border/", "/^outline/", "box-shadow", "text-shadow" ]
+				},
+				"message": "Use rem (or a theme.json preset) instead of px, so sizes follow the visitor's text size. px is only for borders, corner radius, outlines and shadows."
+			}
+		],
+		"declaration-property-unit-disallowed-list": [
+			{ "line-height": [ "px", "rem", "em" ] },
+			{ "message": "Use a unitless line-height, so it scales with the font size." }
+		]
+	}
+}
