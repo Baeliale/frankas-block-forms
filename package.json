@@ -2,6 +2,7 @@
   "name": "frankas-block-forms",
   "version": "1.0.0",
   "license": "GPL-2.0-or-later",
+  "author": "Franka Beekman",
   "description": "Forms built from blocks, with submissions, e-mails and templates",
   "private": true,
   "scripts": {
